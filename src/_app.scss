@@ -1,0 +1,126 @@
+// Third party libs
+@import '../node_modules/normalize.css/normalize.css';
+
+:root {
+  --textColor: #333;
+  --inputBorder: #ddd;
+  --columnBackground: #efefef;
+  --appResetBtnBackground: #dc3545;
+  --appResetBtnBackgroundHover: #c82333;
+  --appResetBtnText: #fff;
+  --appBtnFocusShadow: 0 0 0 .2rem rgba(220, 53, 69, .5);
+  --spinnerBase: #385a6b;
+  --spinnerContrast: #df7b30;
+  --spinnerGo: #006608;
+  --imgFrame: #eee;
+  --cardBackground: #fff;
+  --cardBtnBackground: #385a6b;
+  --cardBtnBackgroundHover: #df7b30;
+  --cardBtnText: #fff;
+  --cardBtnFocusShadow: 0 0 0 .2rem rgba(53, 53, 69, .5);
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+  overflow-x: hidden;
+
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden;
+
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  color: var(--textColor);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.sr-only {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+
+  white-space: nowrap;
+  clip-path: inset(50%);
+
+  border: 0;
+}
+
+.c-app {
+  max-width: 120rem;
+  padding-right: 5vw;
+  padding-left: 5vw;
+  margin: 3rem auto;
+}
+
+.c-app__columns {
+  display: grid;
+
+  grid-gap: 3vw;
+
+  @media only screen and (min-width: 35em) {
+    grid-template-columns: repeat(auto-fit, minmax(calc(10rem - 3vw), 1fr));
+  }
+}
+
+.c-app__btn {
+  display: inline-block;
+
+  padding: .75rem;
+
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+
+  color: var(--appResetBtnText);
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+
+  user-select: none;
+
+  background-color: var(--appResetBtnBackground);
+  border: 1px solid transparent;
+  border-color: var(--appResetBtnBackground);
+  border-radius: .25rem;
+
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out,
+    box-shadow .15s ease-in-out;
+
+  &:hover {
+    text-decoration: none;
+
+    background-color: var(--appResetBtnBackgroundHover);
+    border-color: var(--appResetBtnBackgroundHover);
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: var(--appBtnFocusShadow);
+  }
+
+  &:not(:disabled):not(.disabled) {
+    cursor: pointer;
+  }
+}
+
+.c-app__filters {
+  display: flex;
+  margin-bottom: 1.5rem;
+
+  justify-content: center;
+}

@@ -1,0 +1,488 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card should render correctly 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Card
+    btnLeft="btnLeft"
+    btnRight="btnRight"
+    currentPosition="currentPosition"
+    handleBtnClick={[MockFunction]}
+    id="0a985e0b-9383-43d7-bcf3-f8b8f597451e0"
+    img="thumbnail"
+    location="city"
+    name="firstName0 lastName0"
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="c-card__details"
+        >
+          <img
+            alt="firstName0 lastName0"
+            className="c-card__img"
+            src="thumbnail"
+            title="firstName0 lastName0"
+          />
+          <div
+            className="c-card__body"
+          >
+            firstName0 lastName0
+            <br />
+            city
+          </div>
+        </div>,
+        <div
+          className="c-card__btns"
+        >
+          <button
+            className="c-card__btn c-card__btn--left"
+            onClick={[Function]}
+            type="button"
+          >
+            <Icon
+              iconClass=""
+              iconId="arrowLeft"
+              iconSize=""
+            />
+          </button>
+          <button
+            className="c-card__btn c-card__btn--right"
+            onClick={[Function]}
+            type="button"
+          >
+            <Icon
+              iconClass=""
+              iconId="arrowRight"
+              iconSize=""
+            />
+          </button>
+        </div>,
+      ],
+      "className": "c-card",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <img
+              alt="firstName0 lastName0"
+              className="c-card__img"
+              src="thumbnail"
+              title="firstName0 lastName0"
+            />,
+            <div
+              className="c-card__body"
+            >
+              firstName0 lastName0
+              <br />
+              city
+            </div>,
+          ],
+          "className": "c-card__details",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "alt": "firstName0 lastName0",
+              "className": "c-card__img",
+              "src": "thumbnail",
+              "title": "firstName0 lastName0",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "img",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "firstName0 lastName0",
+                <br />,
+                "city",
+              ],
+              "className": "c-card__body",
+            },
+            "ref": null,
+            "rendered": Array [
+              "firstName0 lastName0",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": "br",
+              },
+              "city",
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <button
+              className="c-card__btn c-card__btn--left"
+              onClick={[Function]}
+              type="button"
+            >
+              <Icon
+                iconClass=""
+                iconId="arrowLeft"
+                iconSize=""
+              />
+            </button>,
+            <button
+              className="c-card__btn c-card__btn--right"
+              onClick={[Function]}
+              type="button"
+            >
+              <Icon
+                iconClass=""
+                iconId="arrowRight"
+                iconSize=""
+              />
+            </button>,
+          ],
+          "className": "c-card__btns",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <Icon
+                iconClass=""
+                iconId="arrowLeft"
+                iconSize=""
+              />,
+              "className": "c-card__btn c-card__btn--left",
+              "onClick": [Function],
+              "type": "button",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "iconClass": "",
+                "iconId": "arrowLeft",
+                "iconSize": "",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": "button",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <Icon
+                iconClass=""
+                iconId="arrowRight"
+                iconSize=""
+              />,
+              "className": "c-card__btn c-card__btn--right",
+              "onClick": [Function],
+              "type": "button",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "iconClass": "",
+                "iconId": "arrowRight",
+                "iconSize": "",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": "button",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "article",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="c-card__details"
+          >
+            <img
+              alt="firstName0 lastName0"
+              className="c-card__img"
+              src="thumbnail"
+              title="firstName0 lastName0"
+            />
+            <div
+              className="c-card__body"
+            >
+              firstName0 lastName0
+              <br />
+              city
+            </div>
+          </div>,
+          <div
+            className="c-card__btns"
+          >
+            <button
+              className="c-card__btn c-card__btn--left"
+              onClick={[Function]}
+              type="button"
+            >
+              <Icon
+                iconClass=""
+                iconId="arrowLeft"
+                iconSize=""
+              />
+            </button>
+            <button
+              className="c-card__btn c-card__btn--right"
+              onClick={[Function]}
+              type="button"
+            >
+              <Icon
+                iconClass=""
+                iconId="arrowRight"
+                iconSize=""
+              />
+            </button>
+          </div>,
+        ],
+        "className": "c-card",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <img
+                alt="firstName0 lastName0"
+                className="c-card__img"
+                src="thumbnail"
+                title="firstName0 lastName0"
+              />,
+              <div
+                className="c-card__body"
+              >
+                firstName0 lastName0
+                <br />
+                city
+              </div>,
+            ],
+            "className": "c-card__details",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "alt": "firstName0 lastName0",
+                "className": "c-card__img",
+                "src": "thumbnail",
+                "title": "firstName0 lastName0",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "img",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "firstName0 lastName0",
+                  <br />,
+                  "city",
+                ],
+                "className": "c-card__body",
+              },
+              "ref": null,
+              "rendered": Array [
+                "firstName0 lastName0",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": "br",
+                },
+                "city",
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <button
+                className="c-card__btn c-card__btn--left"
+                onClick={[Function]}
+                type="button"
+              >
+                <Icon
+                  iconClass=""
+                  iconId="arrowLeft"
+                  iconSize=""
+                />
+              </button>,
+              <button
+                className="c-card__btn c-card__btn--right"
+                onClick={[Function]}
+                type="button"
+              >
+                <Icon
+                  iconClass=""
+                  iconId="arrowRight"
+                  iconSize=""
+                />
+              </button>,
+            ],
+            "className": "c-card__btns",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <Icon
+                  iconClass=""
+                  iconId="arrowLeft"
+                  iconSize=""
+                />,
+                "className": "c-card__btn c-card__btn--left",
+                "onClick": [Function],
+                "type": "button",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "iconClass": "",
+                  "iconId": "arrowLeft",
+                  "iconSize": "",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": "button",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <Icon
+                  iconClass=""
+                  iconId="arrowRight"
+                  iconSize=""
+                />,
+                "className": "c-card__btn c-card__btn--right",
+                "onClick": [Function],
+                "type": "button",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "iconClass": "",
+                  "iconId": "arrowRight",
+                  "iconSize": "",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": "button",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "article",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

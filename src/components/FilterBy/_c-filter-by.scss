@@ -1,0 +1,12 @@
+.c-filter-by {
+  height: 3rem;
+  padding: .5rem .75rem;
+
+  border: 1px solid var(--inputBorder);
+
+  transition: border-color .15s ease-in-out;
+
+  &::placeholder {
+    opacity: 1;
+  }
+}

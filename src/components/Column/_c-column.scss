@@ -1,0 +1,24 @@
+.c-column {
+  display: flex;
+  margin-bottom: 1rem;
+
+  flex-direction: column;
+}
+
+.c-column__header {
+  text-align: center;
+}
+
+.c-column__body {
+  height: 100%;
+  padding: .5rem;
+
+  background-color: var(--columnBackground);
+}
+
+.c-column__title {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+
+  font-size: calc(1.25rem + .15vw);
+}
