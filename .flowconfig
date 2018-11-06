@@ -1,0 +1,20 @@
+[ignore]
+
+[include]
+
+[libs]
+<PROJECT_ROOT>/flow-typed/*.js
+<PROJECT_ROOT>/flow-typed/npm/*.js
+
+[untyped]
+
+[options]
+module.file_ext=.scss
+module.name_mapper.extension='scss' -> 'empty/object'
+module.name_mapper='app' -> '<PROJECT_ROOT>/src'
+module.name_mapper='components' -> '<PROJECT_ROOT>/src/components'
+module.name_mapper='consts' -> '<PROJECT_ROOT>/src/consts'
+module.name_mapper='utils' -> '<PROJECT_ROOT>/src/utils'
+suppress_type=$FlowIssue
+suppress_comment= \\(.\\|\n\\)*\\$FlowFixMe
+module.ignore_non_literal_requires=true

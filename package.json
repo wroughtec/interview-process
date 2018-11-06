@@ -1,0 +1,94 @@
+{
+  "name": "interview-process",
+  "version": "1.0.0",
+  "description": "Move people between 3 states",
+  "main": "index.js",
+  "scripts": {
+    "test": "cross-env NODE_ENV=test jest",
+    "test:watch": "cross-env NODE_ENV=test jest --watch",
+    "test:coverage": "cross-env NODE_ENV=test TZ=UTC jest --coverage",
+    "release": "standard-version",
+    "format": "prettier --write \"src/**/*.{js,css,jsx}\"",
+    "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
+    "dev": "parcel src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wroughtec/interview-process.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "William Corry",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wroughtec/interview-process/issues"
+  },
+  "homepage": "https://github.com/wroughtec/interview-process#readme",
+  "jest": {
+    "verbose": true,
+    "transform": {
+      "^.+\\.jsx$": "babel-jest",
+      "^.+\\.js$": "babel-jest"
+    },
+    "transformIgnorePatterns": [
+      "[/\\\\]node_modules[/\\\\].+\\.(js|jsx)$"
+    ],
+    "coveragePathIgnorePatterns": [
+      "./public/",
+      "./node_modules/"
+    ],
+    "setupFiles": [
+      "./setupTests.js"
+    ],
+    "moduleNameMapper": {
+      "^.+\\.(css|less|scss)$": "babel-jest"
+    }
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.0",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/plugin-syntax-flow": "^7.0.0",
+    "@babel/plugin-transform-react-jsx": "^7.0.0",
+    "@babel/plugin-transform-runtime": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-flow": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-core": "^7.0.0-0",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^23.6.0",
+    "babel-plugin-module-resolver": "^3.1.1",
+    "cross-env": "^5.2.0",
+    "enzyme": "^3.6.0",
+    "enzyme-adapter-react-16": "^1.5.0",
+    "eslint": "^5.6.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^3.1.0",
+    "eslint-config-react": "^1.1.7",
+    "eslint-import-resolver-babel-module": "^5.0.0-beta.1",
+    "eslint-plugin-env": "^0.0.3",
+    "eslint-plugin-flow": "^2.29.1",
+    "eslint-plugin-flowtype": "^3.2.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-prettier": "^3.0.0",
+    "eslint-plugin-react": "^7.11.1",
+    "fetch-mock": "^7.0.0-beta.1",
+    "flow-bin": "^0.85.0",
+    "jest": "^23.6.0",
+    "jest-fetch-mock": "^1.6.6",
+    "node-fetch": "^2.2.0",
+    "parcel-bundler": "^1.10.3",
+    "sass": "^1.14.0",
+    "stylelint": "^9.5.0",
+    "stylelint-config-prettier": "^4.0.0",
+    "stylelint-no-browser-hacks": "^1.2.1",
+    "stylelint-no-unsupported-browser-features": "^3.0.1",
+    "stylelint-order": "^1.0.0"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.0",
+    "react": "16.x",
+    "react-dom": "^16.6.0"
+  }
+}
